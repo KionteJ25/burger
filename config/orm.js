@@ -10,7 +10,7 @@ function printQuestionMarks(num) {
   
     return arr.toString();
   }
-  
+
   // Helper function to convert object key/value pairs to SQL syntax
   function objToSql(ob) {
     var arr = [];
@@ -18,9 +18,7 @@ function printQuestionMarks(num) {
  
     for (var key in ob) {
       var value = ob[key];
-
       if (Object.hasOwnProperty.call(ob, key)) {
-
         if (typeof value === "string" && value.indexOf(" ") >= 0) {
           value = "'" + value + "'";
         }
